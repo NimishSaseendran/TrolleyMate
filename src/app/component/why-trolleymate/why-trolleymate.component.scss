@@ -1,0 +1,75 @@
+.why-trolleymate-section {
+    background: #111927;
+    padding: 5rem 2rem;
+    color: #ffffff;
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+
+            span {
+                color: #0066ff;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .timeline {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .timeline-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-left: 3rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 1rem;
+                top: 0;
+                width: 4px;
+                height: 100%;
+                background: #0066ff;
+                opacity: 0.3;
+            }
+
+            .icon-circle {
+                background: #0066ff;
+                color: #fff;
+                padding: 1rem;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                box-shadow: 0 0 15px rgba(0, 102, 255, 0.5);
+                flex-shrink: 0;
+            }
+
+            .content {
+                h3 {
+                    font-size: 1.4rem;
+                    color: #ffffff;
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    color: #dddddd;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}

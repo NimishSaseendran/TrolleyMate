@@ -1,0 +1,21 @@
+<section class="smart-preview-section">
+    <h2 class="preview-heading">Smart Trolley Preview</h2>
+    <p class="preview-subtext">A futuristic preview of our intelligent shopping assistant is on the way.</p>
+
+    <div class="coming-box">
+        <!-- <h3 class="coming-title">🛒 3D Smart Trolley Preview</h3> -->
+        <p class="coming-message">Coming Soon: More than just a cart — your intelligent shopping partner is
+            on its way.
+            Get ready for a futuristic in-store experience where AI meets automation, where the trolley follows you,
+            understands you, and redefines how you shop. The future of retail is being built — and it’s rolling in soon.
+        </p>
+
+        <div class="component-grid">
+            <div class="component-card" *ngFor="let item of components" data-aos="zoom-in">
+                <i [class]="item.icon"></i>
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>

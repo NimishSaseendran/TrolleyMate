@@ -1,0 +1,14 @@
+<div class="how-it-works-wrapper">
+    <div class="steps-grid">
+        <div class="step-card" *ngFor="let step of steps; let i = index" data-aos="fade-up"
+            data-aos-easing="ease-in-out" data-aos-duration="1000" [attr.data-aos-delay]="i * 200">
+            <div class="card-glow-ring"></div>
+            <div class="icon-wrapper">
+                <img [src]="step.icon" alt="Step Icon" />
+            </div>
+            <div class="step-number">STEP {{ i + 1 }}</div>
+            <div class="step-title">{{ step.title }}</div>
+            <div class="step-description">{{ step.description }}</div>
+        </div>
+    </div>
+</div>
